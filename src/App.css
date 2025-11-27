@@ -1,10 +1,38 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* --- NAVBAR GENERAL --- */
+.custom-navbar {
+  background-color: #ffffff !important;
+  padding: 10px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
+/* --- LOGO DEL NAVBAR --- */
+.navbar-logo {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  margin-right: 12px;
+}
+
+/* --- TEXTO DE LA MARCA --- */
+.navbar-brand-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333 !important;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* --- HOVER (que se vea elegante) --- */
+.navbar-brand:hover {
+  opacity: 0.8;
+}
+
+/* --- BOTÓN INICIAR / CERRAR SESIÓN --- */
+.navbar .btn {
+  border-radius: 8px;
+  padding: 6px 16px;
+  font-weight: 500;
+}
 .logo {
   height: 6em;
   padding: 1.5em;

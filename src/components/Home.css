@@ -1,0 +1,63 @@
+/* ---------------- HERO SECTION (Mejorado) ---------------- */
+
+.hero-section {
+  width: 100%;
+  background: #f3e7d3; /* color panadería suave */
+  padding: 70px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-subtitle {
+  max-width: 1200px;
+  font-size: 1.8rem;
+  color: #5b4636; /* marrón estilo pan */
+  text-align: center;
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* ---------------- FOOTER (mantiene tu estilo actual) ---------------- */
+
+.app-footer {
+  background: #f8f9fa;
+  padding: 40px 0;
+  margin-top: 60px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.app-footer .footer-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.app-footer p {
+  margin: 4px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.footer-social {
+  margin-top: 15px;
+}
+
+.footer-social a {
+  margin: 0 8px;
+  font-size: 1.2rem;
+  color: #444;
+  transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #d87d1c;
+}
+
+.footer-copy {
+  margin-top: 15px;
+  font-size: 0.85rem;
+  color: #777;
+}

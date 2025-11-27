@@ -1,0 +1,32 @@
+.perfil-root .avatar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border: 3px solid #f0f0f0;
+}
+
+.avatar-placeholder {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9ecef;
+  font-size: 40px;
+  color: #666;
+}
+
+.perfil-root .card-header .float-end {
+  float: right;
+}
+
+.perfil-root .card {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.06);
+}

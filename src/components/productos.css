@@ -1,0 +1,61 @@
+/* Efecto hover y sombra para las tarjetas */
+.card-hover {
+transition: transform 0.3s, box-shadow 0.3s;
+cursor: pointer;
+}
+.card-hover:hover {
+transform: translateY(-5px) scale(1.03);
+box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Contenedor de imagen para evitar overflow */
+.card-img-wrapper {
+overflow: hidden;
+border-radius: 5px 5px 0 0;
+}
+
+/* Zoom suave de la imagen al pasar el mouse */
+.card-img-zoom {
+transition: transform 0.4s ease;
+}
+.card-img-zoom:hover {
+transform: scale(1.1);
+}
+
+/* Botón Agregar al carrito */
+.card-body button {
+transition: background-color 0.3s, transform 0.2s;
+}
+.card-body button:hover {
+transform: translateY(-2px);
+}
+
+/* Estilos de títulos y textos */
+.card-title {
+font-size: 1.1rem;
+font-weight: 600;
+margin-bottom: 0.5rem;
+}
+
+.card-text {
+font-size: 0.9rem;
+color: #555;
+}
+
+/* Sección de carrito */
+#carrito .card {
+border: 1px solid #ddd;
+}
+
+/* Responsive: ajustar altura de la imagen en el carrito */
+@media (max-width: 768px) {
+#carrito .card-img-top {
+height: 180px;
+}
+}
+
+@media (min-width: 768px) {
+#carrito .card-img-top {
+height: 200px;
+}
+}

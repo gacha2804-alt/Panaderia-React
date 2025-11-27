@@ -1,0 +1,151 @@
+/*LAYOUT GENERAL */
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f7f3ec; 
+  font-family: "Poppins", sans-serif;
+}
+
+/*  BARRA LATERAL*/
+.sidebar {
+  width: 240px;
+  background-color: #5b4636; 
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.15); 
+}
+
+.sidebar-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0 20px;
+  margin-bottom: 25px;
+  color: #ffe8c6; /* Beige suave */
+}
+
+/* Menu */
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 20px;
+}
+
+.sidebar-menu a {
+  color: #f8eede; 
+  text-decoration: none;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  transition: 0.3s ease;
+}
+
+.sidebar-menu a:hover {
+  background-color: #d8a060; /* color dulce estilo pan */
+  color: white;
+  transform: translateX(5px); /* pequeño movimiento */
+}
+
+/* ------------------------------
+   BOTÓN CERRAR SESIÓN
+------------------------------ */
+
+.logout-btn {
+  margin: 20px;
+  padding: 12px 15px;
+  background-color: #c6938d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 1rem;
+}
+
+.logout-btn:hover {
+  background-color: #36201e;
+  transform: scale(1.04);
+}
+
+/* ------------------------------
+   CONTENIDO PRINCIPAL
+------------------------------ */
+
+.dashboard-content {
+  margin-left: 240px;
+  padding: 40px;
+  flex: 1;
+}
+
+.dashboard-content h2 {
+  margin-bottom: 20px;
+  color: #5b4636;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Tarjeta interna */
+.dashboard-inner {
+  background: #fffdf8; /* crema claro */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f0e4d6;
+}
+
+/* ------------------------------
+   RESPONSIVE
+------------------------------ */
+
+@media (max-width: 768px) {
+  .dashboard-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+  }
+
+  .dashboard-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+.dashboard-bienvenida h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.dashboard-cards .card {
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.dashboard-cards .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
